@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./first.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <title>Job Openings-Portal</title>
+</head>
+
+<body>
+    <div class="parent-container">
+        <header class="head">
+            <div class="top-part">
+                <div class="search">
+                    <input type="text" name="value[]" id="myValue" value="" class="search-box"
+                        placeholder="Search your job" />
+                    <button id="erase" onclick="filterNames();">Clear</button>
+                </div>
+            </div>
+
+            <div class="drop-down">
+                <label for="experience">Filter By:</label>
+                <select name="" onchange="getSelectedValue();" onclick="filterNames();" class="form-control" id="list">
+                    <option value="">By Experience:-</option>
+                    <option value="Fresher">Fresher</option>
+                    <option value="Junior">Junior</option>
+                    <option value="Senior">Senior</option>
+                    <option value="Lead">Lead</option>
+                    <option value="">By Role:-</option>
+                    <option value="Frontend">Frontend</option>
+                    <option value="Backend">Backend</option>
+                    <option value="">By Tech Stack:-</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Java">Java</option>
+                    <option value="Sprint Boot">Sprint Boot</option>
+                </select>
+            </div>
+        </header>
+
+        <div class="card" id="card-container">
+
+        </div>
+        <script src="./first.js"></script>
+    </div>
+</body>
+
+</html>

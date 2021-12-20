@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+  background-color: aquamarine;
+}
+.top-image img {
+  margin: 0;
+  height: 100px;
+  width: 100%;
+}
+/* Search bar */
+.search input {
+  width: 500px;
+  height: 50px;
+  margin-top: 0;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+.search {
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.parentDiv {
+  display: block;
+}
+
+#card-container {
+  border-radius: 8px;
+  width: 95%;
+  background-color: rgb(0, 255, 179);
+  margin-bottom: 10px;
+}
+
+/* Single card */
+.container {
+  background-color: #ffffff;
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.contentParentDiv {
+  /* border: 1px solid red; */
+}
+
+/* Left Side */
+.left-side {
+  display: flex;
+  align-items: center;
+}
+.statusParentDiv {
+  margin-left: 0;
+  display: flex;
+}
+.statusParentDiv div {
+  margin-left: 0;
+  margin-right: 10px;
+  border-radius: 16px;
+}
+.statusParentDiv div:nth-child(1) {
+  padding: 2px 8px 2px 0px;
+  color: rgb(0, 255, 179);
+}
+.statusParentDiv div:nth-child(2) {
+  background-color: rgb(0, 255, 179);
+  padding: 2px 8px 2px 8px;
+  color: white;
+}
+.statusParentDiv div:nth-child(3) {
+  background-color: rgb(12, 12, 12);
+  padding: 2px 8px 2px 8px;
+  color: white;
+}
+
+.roleDiv h3 {
+  margin-top: 5px;
+}
+
+.singleEffectiveDate {
+  color: gray;
+}
+
+/* Images */
+.profileImg {
+  margin-right: 10px;
+}
+.profileImg img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+/* Drop Down */
+.drop-down {
+  margin-top: 10px;
+}
+
+/* Parent Container */
+.card {
+  margin-top: 50px;
+}
+
+.head {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2%;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Right side */
+.right-side {
+  /* border: 1px solid red; */
+}
+.techStackContainDiv {
+  display: flex;
+  flex-flow: row wrap;
+}
+.techStackContainDiv div {
+  margin-right: 5px;
+  padding: 2px 8px 2px 8px;
+  background-color: rgba(137, 245, 245, 0.1);
+  color: rgb(0, 255, 179);
+  cursor: pointer;
+}
+.techStackContainDiv div:hover {
+  background-color: rgb(0, 255, 179);
+  color: white;
+}
+
+/* Parent container */
+.parent-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Close Button */
+button {
+  position: absolute;
+  right: 15px;
+  top: 6px;
+  border: none;
+  height: 40px;
+  width: 60px;
+  border-radius: 4px;
+  color: aquamarine;
+  background-color: #ffffff;
+  outline: none;
+  text-align: center;
+  font-weight: bold;
+  padding: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+button:hover {
+  cursor: pointer;
+}
+
+/* SELECT OPTIONS */
+select {
+  height: 30px;
+  width: 180px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+option {
+  color: aqua;
+  background-color: black;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .search input {
+    width: 400px;
+  }
+  #card-container {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .search input {
+    width: 300px;
+  }
+}

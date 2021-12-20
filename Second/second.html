@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./second.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <title>Continents</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <header class="head">
+            <div class="top-part">
+                <div class="search">
+                    <input type="text" name="value[]" id="myValue" value="" class="search-box"
+                        placeholder="Search by region/language..." />
+                    <button id="erase" onclick="filterNames();">Clear</button>
+                    <button class="btn" onclick="filterNames();">Search</button>
+                </div>
+            </div>
+
+            <div class="drop-down">
+                <label for="experience">Filter By:</label>
+                <select name="" class="form-control" onchange="getSelectedValue();" onclick="filterNames();" id="list">
+                    <option value="">By Region:</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Africa">Africa</option>
+                    <option value="America">America</option>
+                    <option value="Europe">Europe</option>
+                    <option value="">By Language:</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="English">English</option>
+                    <option value="Arabic">Arabic</option>
+                </select>
+            </div>
+        </header>
+
+        <div class="parent-container" id="parentContainerDiv">
+
+        </div>
+    </div>
+    <script src="./second.js"></script>
+</body>
+
+</html>
